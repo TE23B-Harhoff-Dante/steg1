@@ -52,8 +52,8 @@ int z = 0;
 while(x < 5)
 {
     Console.WriteLine("Write a number");
-    string number = Console.ReadLine();
-    int.TryParse(number, out z);
+    string number55 = Console.ReadLine();
+    int.TryParse(number55, out z);
     if(z > 5)
     {
         Console.WriteLine("Högre än fem");
@@ -62,8 +62,36 @@ while(x < 5)
 }
 
 // 7
+Console.WriteLine("Skriv inte en siffra");
+bool number = true;
+int number1;
+while(number == true)
+{
+    string siffra2 = Console.ReadLine();
+    number = int.TryParse(siffra2, out number1);
+    Console.WriteLine("GOOFY");
+}
 
+// 8
+Console.WriteLine("gissa rätt siffra (1-1000)");
 
+int guess = 0;
+
+while(guess != 133)
+{
+    string guess10 = Console.ReadLine();
+    int.TryParse(guess10, out guess);
+
+    if(guess > 133)
+    {
+        Console.WriteLine($"{guess} är För högt");
+    }
+    else if(guess < 133)
+    {
+        Console.WriteLine($"{guess} är För lågt");
+    }
+}
+Console.WriteLine("Rätt");
 
 
 
